@@ -15,25 +15,6 @@ def find_wdfs(directory):
 			wdfList.append(f_name)
 	return wdfList
 
-
-# copyfile("C:/Users/CALIBR8/Desktop/FRANCISCARILLO_instrument19_667064122.wdf","C:/Users/CALIBR8/Google Drive/EDC - Projects and Scripts/tempLogger/Duplicates/a.wdf")
-
-# with open("C:/Users/CALIBR8/Desktop/FRANCISCARILLO_instrument19_667064122.wdf") as f:
-# 	with open("fileName.csv", "w", newline="") as csvfile:
-# 		dataWriter = csv.writer(csvfile, delimiter=",", quotechar="'")
-# 		for line in f:
-# 			if (line[0] == "<"):
-# 				if (line[:13] == "<Sensor Name>"):
-# 					sensorName = line.lstrip("<Sensor Name>").rstrip("\n")
-# 					print(type(sensorName))
-# 			else:
-# 				break
-# 		for line in f:
-# 				rowData = line.split(",")
-# 				rowData.insert(0, sensorName)
-# 				#print(rowData[:3])\
-# 				dataWriter.writerow(rowData[:3])
-
 def parser(f_name):
 	no_ext = os.path.splitext(f_name)[0]
 	print(no_ext)
